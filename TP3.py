@@ -27,7 +27,7 @@ while refaire == 'y':
     value = random.randint(int(born_minimal), int(born_maximal))
 
     # dans cette boucle, l'utilisateur doit trouver le nombre aléatoire.
-    while True:
+    while refaire_c == 1:
 
         if refaire_c == 1:
 
@@ -50,10 +50,9 @@ while refaire == 'y':
 
                 else:
 
-                 # essentiellement, ce code va recommencer le jeu.
-                 refaire_c = 0
-
-                 continue
+                    # essentiellement, ce code va recommencer le jeu.
+                    refaire_c = 0
+                    continue
 
             #  cette boucle va augmenter la valeur du nombre d'éssai
             # elle va aussi indiquer si l'essai est plus grand au plus petit que value
@@ -69,3 +68,6 @@ while refaire == 'y':
                     print('ton essai est plus petit que le nombre mistère, essai encore.')
 
                     nombre_essai = nombre_essai + 1
+
+        else:
+            continue
